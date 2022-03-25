@@ -23,8 +23,8 @@ const App = () => {
   useEffect(() => {
     axios.get(`https://swapi.dev/api/people/`)
     .then(res => {
-      console.log(res.data.results);
-      setCharacters(res.data.results);
+      console.log(res.data);
+      setCharacters(res.data);
     })
     .catch(err => {
       console.error(err);
